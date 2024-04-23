@@ -1,6 +1,6 @@
 <template>
   <nav class="bg-gray-800">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-full px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -85,9 +85,9 @@
                 on-icon="i-heroicons-sun-20-solid"
                 off-icon="i-heroicons-moon-16-solid"
                 v-model="selected1" v-on:click="setColorTheme()" />
-              <b>{{ selected1 }}</b>
+              <b class="dark:text-white">{{ selected1 }}</b>
               <a> {{ $t('welcome') }} </a>
-              {{ '    | '+ $colorMode.value }}
+              {{ '  | | '+ $colorMode.value }}
             </div>
           </div>
         </div>
