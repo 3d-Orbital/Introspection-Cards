@@ -1,6 +1,7 @@
 
 interface _GlobalComponents {
-      'Menu': typeof import("../components/Menu.vue")['default']
+      'Card': typeof import("../components/Card.vue")['default']
+    'Menu': typeof import("../components/Menu.vue")['default']
     'UAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
     'UAlert': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
     'UAvatar': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Avatar.vue")['default']
@@ -78,7 +79,8 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'UModals': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
     'USlideovers': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
-      'LazyMenu': typeof import("../components/Menu.vue")['default']
+      'LazyCard': typeof import("../components/Card.vue")['default']
+    'LazyMenu': typeof import("../components/Menu.vue")['default']
     'LazyUAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
     'LazyUAlert': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
     'LazyUAvatar': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Avatar.vue")['default']
@@ -170,6 +172,7 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const Card: typeof import("../components/Card.vue")['default']
 export const Menu: typeof import("../components/Menu.vue")['default']
 export const UAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
 export const UAlert: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
@@ -248,6 +251,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const UModals: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const USlideovers: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
+export const LazyCard: typeof import("../components/Card.vue")['default']
 export const LazyMenu: typeof import("../components/Menu.vue")['default']
 export const LazyUAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
 export const LazyUAlert: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
