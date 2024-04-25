@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "title": "Reina de la fuerza de la voluntadad",
+      "content": "Istrumento de Fuerza interioen manos del cocheropara guiar el potro.  Lepermite controlarlo acelerar su paso o frenarlo y detenerlo",
+      "footer": "Si Se revienta esta rienda de Poder el Potro se desboca",
+      "cardType":"situación",
+      "borderColor":"green",
+      "bacground": "",
+      "image1":"",
+      "image2":"",
+      "imageBack":"",
+      "value":""
+    },
+    {
+        "id": 1,
+        "title": "Reina de la fuerza de la voluntadad",
+        "content": "Istrumento de Fuerza interioen manos del cocheropara guiar el potro.  Lepermite controlarlo acelerar su paso o frenarlo y detenerlo",
+        "footer": "Si Se revienta esta rienda de Poder el Potro se desboca",
+        "cardType":"situación",
+        "borderColor":"green",
+        "bacground": "",
+        "image1":"",
+        "image2":"",
+        "imageBack":"",
+        "value":""
+      }
+  ]
+  

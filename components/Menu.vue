@@ -37,12 +37,9 @@
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
-                aria-current="page">Dashboard</a>
-              <a href="#"
-                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-              <a href="#"
-                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+              <NuxtLink :to="{name: 'index' }" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">{{ $t('navHome') }} </NuxtLink>
+              <NuxtLink to="/" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ $t('navAboutUs') }}</NuxtLink>
+              <NuxtLink to="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ $t('navContact') }}</NuxtLink>
 
                 <!--
                   Set Color Them
