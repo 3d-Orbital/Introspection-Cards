@@ -3,10 +3,16 @@ export default defineI18nConfig(() => ({
     locale: 'en',
     messages: {
       en: {
-        welcome: 'Welcome'
+        welcome: 'Welcome',
+        navHome: 'Home',
+        navAboutUs: 'About Us',
+        navContact: 'Contact'
       },
       es: {
-        welcome: 'Bienvenido'
+        welcome: 'Bienvenido',
+        navHome: 'Inicio',
+        navAboutUs: 'Nosotros',
+        navContact: 'Contacto'
       }
     }
   }))
