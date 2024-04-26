@@ -1,0 +1,70 @@
+  {
+  "cards":[
+    {
+      "id": 1,
+      "title": "Reina de la fuerza de la voluntadad",
+      "content": "Instrumento de Fuerza interio en manos del cochero para guiar el potro. Le permite controlarlo acelerar su paso o frenarlo y detenerlo",
+      "footer": "Si se revienta esta rienda de Poder el Potro se desboca.",
+      "cardType":"situación",
+      "borderColor":"red",
+      "bacground": "",
+      "image1":"",
+      "image2":"",
+      "imageBack":"",
+      "value":""
+    },
+    {
+      "id": 2,
+      "title": "Escalinatas De La Disponiblidad",
+      "content": "Istrumento de Fuerza interioen manos del cocheropara guiar el potro.  Lepermite controlarlo acelerar su paso o frenarlo y detenerlo",
+      "footer": "Si Se revienta esta rienda de Poder el Potro se desboca",
+      "cardType":"situación",
+      "borderColor":"red",
+      "bacground": "",
+      "image1":"",
+      "image2":"",
+      "imageBack":"",
+      "value":""
+    },
+    {
+      "id": 3,
+      "title": "Espada De La Acción Correcta",
+      "content": "Istrumento de Fuerza interioen manos del cocheropara guiar el potro.  Lepermite controlarlo acelerar su paso o frenarlo y detenerlo",
+      "footer": "Si Se revienta esta rienda de Poder el Potro se desboca",
+      "cardType":"situación",
+      "borderColor":"red",
+      "bacground": "",
+      "image1":"",
+      "image2":"",
+      "imageBack":"",
+      "value":""
+    },
+    {
+      "id": 4,
+      "title": "La Ley De La Compensación",
+      "content": "Istrumento de Fuerza interioen manos del cocheropara guiar el potro.  Lepermite controlarlo acelerar su paso o frenarlo y detenerlo",
+      "footer": "Si Se revienta esta rienda de Poder el Potro se desboca",
+      "cardType":"situación",
+      "borderColor":"red",
+      "bacground": "",
+      "image1":"",
+      "image2":"",
+      "imageBack":"",
+      "value":""
+    },
+    {
+      "id": 5,
+      "title": "Fiera del Apego y el Miedo",
+      "content": "Istrumento de Fuerza interioen manos del cocheropara guiar el potro.  Lepermite controlarlo acelerar su paso o frenarlo y detenerlo",
+      "footer": "Si Se revienta esta rienda de Poder el Potro se desboca",
+      "cardType":"situación",
+      "borderColor":"red",
+      "bacground": "",
+      "image1":"",
+      "image2":"",
+      "imageBack":"",
+      "value":""
+    }
+  ]
+}
+  

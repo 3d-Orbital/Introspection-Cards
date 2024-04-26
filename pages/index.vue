@@ -1,8 +1,7 @@
 <template>
     <h1>Page Home</h1>
     <Card></Card>
-    
-    
+    <Deck></Deck>
 
 
 </template>
