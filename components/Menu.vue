@@ -64,7 +64,7 @@
                   size="sm"
                   color="primary"
                   variant="solid"
-                  label="Light"
+                  label="Dark"
                   v-on:click="setColorTheme()"
                   :trailing="false"
                 />
@@ -75,7 +75,7 @@
                   size="sm"
                   color="primary"
                   variant="Dark"
-                  label="light"
+                  label="Light"
                   v-on:click="setColorTheme()" 
                   :trailing="false"
                 />
