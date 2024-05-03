@@ -7,25 +7,25 @@
       "section": "Le permite controlarlo, acelerar su paso o frenarlo y detenerlo.",
       "footer": "Si se revienta esta rienda de Poder el Potro se desboca.",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"ring-2 hover:ring-4 ring-red-200 dark:ring-red-600",
       "bacground": "",
       "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"hiden",
+      "imageBack":"back3-min",
       "value":""
     },
     {
       "id": 2,
       "title": "Escalinatas De La Disponiblidad",
-      "content": "Es buena voluntad para estar enteramente dispuesto a haber lo que haya que hacer.",
+      "content": "Es buena voluntad para estar enteramente dispuesto a haber lo que haya que hacer.\n",
       "section": "Para alcanzar la armonía y la paz interior",
       "footer": "y ascender alegres por el camino de la liberación.",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"border-green-200 dark:border-green-600 ring-green-200 dark:ring-green-600",
       "bacground": "",
       "image1":"rienda3-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"back3-min",
       "value":"hiden"
     },
     {
@@ -35,11 +35,11 @@
       "section": "Tomando Decisiones Correctas a cada instante del Camino abre la Senda de la Rectitud",
       "footer": "Que es la eterna disponibilidad, Conquista el reino de la realización.",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"ring-2 hover:ring-4 ring-red-200 dark:ring-red-600",
       "bacground": "",
       "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"back3-min",
       "value":"hiden"
     },
     {
@@ -49,11 +49,11 @@
       "section": "instante a instante cosecho lo que Siembro, Siembro lo que Cosecho",
       "footer": "a cada momento doy lo que recibo y recibo lo que doy",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"ring-2 hover:ring-4 ring-red-200 dark:ring-red-600",
       "bacground": "",
       "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"back3-min",
       "value":"hiden"
     },
     {
@@ -63,11 +63,11 @@
       "section": "Apegándonos compulsivamente a las personas y las cosas, al Dinero y al Placer",
       "footer": "generamos miedo obsesivo de perder lo que tenemos o no alcanzar lo que deseamos",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"ring-2 hover:ring-4 ring-red-200 dark:ring-red-600",
       "bacground": "",
       "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"back3-min",
       "value":"show"
     },
     {
@@ -77,11 +77,11 @@
       "section": "Cambio con Valor lo que puedo y tengo que cambiar",
       "footer": "y construyo mi Destino con las decisiones tomadas a cada Instante de Camino",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"ring-2 hover:ring-4 ring-red-200 dark:ring-red-600",
       "bacground": "",
       "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"back3-min",
       "value":"hiden"
     },
     {
@@ -91,11 +91,11 @@
       "section": "es Romper las Cadenas delos Apegos destructivos y de las actitudes negativas",
       "footer": "es salir de las Prisiones del Temor y el Miedo en el Sufrimiento",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"ring-2 hover:ring-4 ring-red-200 dark:ring-red-600",
       "bacground": "",
       "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"back3-min",
       "value":"hiden"
     },
     {
@@ -105,11 +105,11 @@
       "section": "HACER lo que tenemos que hacer a la Luz de la Sabiduría",
       "footer": "No Hacer lo que no debemos Hacer en la Senda de la Realización",
       "cardType":"situación",
-      "borderColor":"ring-red-600",
+      "borderColor":"ring-2 hover:ring-4 ring-red-200 dark:ring-red-600",
       "bacground": "",
       "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"back3-min",
       "value":"hiden"
     }
   ]
