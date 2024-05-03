@@ -9,9 +9,9 @@
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda2-min",
       "image2":"",
-      "imageBack":"",
+      "imageBack":"hiden",
       "value":""
     },
     {
@@ -23,10 +23,10 @@
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda3-min",
       "image2":"",
       "imageBack":"",
-      "value":""
+      "value":"hiden"
     },
     {
       "id": 3,
@@ -37,7 +37,7 @@
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda2-min",
       "image2":"",
       "imageBack":"",
       "value":"hiden"
@@ -51,7 +51,7 @@
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda2-min",
       "image2":"",
       "imageBack":"",
       "value":"hiden"
@@ -65,52 +65,52 @@
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda2-min",
       "image2":"",
       "imageBack":"",
-      "value":""
+      "value":"show"
     },
     {
       "id": 6,
-      "title": "Fiera Del Apego Y El Miedo",
+      "title": "Escudo de La Responsabilidad Interior",
       "content": "Soy el Único Dueño de mi Reino Interior, Pensamiento, Voluntad y Emociones",
       "section": "Cambio con Valor lo que puedo y tengo que cambiar",
       "footer": "y construyo mi Destino con las decisiones tomadas a cada Instante de Camino",
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda2-min",
       "image2":"",
       "imageBack":"",
-      "value":""
+      "value":"hiden"
     },
     {
       "id": 7,
-      "title": "Fiera Del Apego Y El Miedo",
+      "title": "Sendero de La Libertad",
       "content": "La verdadera Libertad nace de la Verdad y es Interior",
       "section": "es Romper las Cadenas delos Apegos destructivos y de las actitudes negativas",
       "footer": "es salir de las Prisiones del Temor y el Miedo en el Sufrimiento",
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda2-min",
       "image2":"",
       "imageBack":"",
-      "value":""
+      "value":"hiden"
     },
     {
       "id": 8,
-      "title": "Fiera Del Apego Y El Miedo",
+      "title": "Ruby de La Fortaleza",
       "content": "Regalo del Rey padre que nos da el Poder Interior para Actuar con determinación",
       "section": "HACER lo que tenemos que hacer a la Luz de la Sabiduría",
       "footer": "No Hacer lo que no debemos Hacer en la Senda de la Realización",
       "cardType":"situación",
       "borderColor":"ring-red-600",
       "bacground": "",
-      "image1":"",
+      "image1":"rienda2-min",
       "image2":"",
       "imageBack":"",
-      "value":""
+      "value":"hiden"
     }
   ]
 }
