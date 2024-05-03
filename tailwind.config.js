@@ -4,6 +4,14 @@ export default {
     "./src/**/*.ts",
     "./**/*.html"
   ],
+  safelist: [
+    'text-2xl',
+    'text-3xl',
+    {
+      pattern: /ring-(red|green|blue)-(100|200|600)/,
+      variants: ['lg', 'hover', 'focus', 'lg:hover','dark'],
+    },
+  ],
   theme: {
     extend: {},
   },

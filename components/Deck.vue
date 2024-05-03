@@ -1,6 +1,6 @@
   
 <template>
-    <h2>Component Deck</h2>
+    <h2 class="text-2xl" >Component Deck</h2>
     <div class="flex flex-row">
         <Card v-for="card in cards" :key="card.id" :="card" ></Card>
     </div>
