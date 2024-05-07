@@ -6,7 +6,9 @@
     </div>
 </template>
 <script setup lang="ts">
-import { cards } from '~/server/api/cards.json'
+//import { cards } from '~/server/api/cards.json'
+
+import { cards } from '~/data/cards.json'
 
 const route = useRoute()
 const { data } = await useAsyncData(async () => {
