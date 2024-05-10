@@ -2,6 +2,7 @@
 interface _GlobalComponents {
       'Card': typeof import("../components/Card.vue")['default']
     'Card2': typeof import("../components/Card2.vue")['default']
+    'Cards': typeof import("../components/Cards.vue")['default']
     'Deck': typeof import("../components/Deck.vue")['default']
     'Menu': typeof import("../components/Menu.vue")['default']
     'UAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
@@ -83,6 +84,7 @@ interface _GlobalComponents {
     'USlideovers': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
       'LazyCard': typeof import("../components/Card.vue")['default']
     'LazyCard2': typeof import("../components/Card2.vue")['default']
+    'LazyCards': typeof import("../components/Cards.vue")['default']
     'LazyDeck': typeof import("../components/Deck.vue")['default']
     'LazyMenu': typeof import("../components/Menu.vue")['default']
     'LazyUAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
@@ -178,6 +180,7 @@ declare module 'vue' {
 
 export const Card: typeof import("../components/Card.vue")['default']
 export const Card2: typeof import("../components/Card2.vue")['default']
+export const Cards: typeof import("../components/Cards.vue")['default']
 export const Deck: typeof import("../components/Deck.vue")['default']
 export const Menu: typeof import("../components/Menu.vue")['default']
 export const UAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
@@ -259,6 +262,7 @@ export const UModals: typeof import("../node_modules/nuxt/dist/app/components/se
 export const USlideovers: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const LazyCard: typeof import("../components/Card.vue")['default']
 export const LazyCard2: typeof import("../components/Card2.vue")['default']
+export const LazyCards: typeof import("../components/Cards.vue")['default']
 export const LazyDeck: typeof import("../components/Deck.vue")['default']
 export const LazyMenu: typeof import("../components/Menu.vue")['default']
 export const LazyUAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
