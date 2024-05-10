@@ -39,8 +39,8 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <NuxtLink :to="{name: 'index' }" active-class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ $t('navHome') }} </NuxtLink>
-              <NuxtLink to="/aboutUs" active-class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" 
-                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ $t('navAboutUs') }}</NuxtLink>
+              <NuxtLink to="/decks" active-class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" 
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ $t('navDecks') }}</NuxtLink>
               <NuxtLink to="/contact" active-class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ $t('navContact') }}</NuxtLink>
 
@@ -104,6 +104,11 @@
           </button>
           <!-- Profile dropdown -->
           <div class="relative ml-3">
+            <UToggle size="lg" 
+                class="mr-3",
+                on-icon="i-heroicons-sun-20-solid"
+                off-icon="i-heroicons-moon-16-solid"
+                v-model="selected1" v-on:click="setColorTheme()" />
             <UDropdown :items="settings" :popper="{ placement: 'bottom-start' }">
               <UAvatar src="https://avatars.githubusercontent.com/u/5130818?v=4" />
             </UDropdown>
@@ -120,8 +125,8 @@
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
           aria-current="page">home</a>
-        <a href="#"
-          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+        <a href="/decks"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Decks</a>
         <a href="#"
           class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
       </div>

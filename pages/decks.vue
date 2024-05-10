@@ -1,5 +1,6 @@
 <template>
-    <h1>Page About Us</h1>
+    <h1>Page Decks</h1>
+    <Deck></Deck>
 </template>
 
 <script setup lang="ts">

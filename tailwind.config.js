@@ -11,6 +11,10 @@ export default {
       pattern: /ring-(red|yellow|blue)-(100|300|600)/,
       variants: ['lg', 'hover', 'focus', 'lg:hover','dark'],
     },
+    {
+      pattern: /bg-(red|yellow|blue)-(100|800|950)/,
+      variants: ['lg', 'hover', 'focus', 'lg:hover','dark'],
+    },
   ],
   theme: {
     extend: {},
