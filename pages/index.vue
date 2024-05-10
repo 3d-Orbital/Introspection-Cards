@@ -1,9 +1,8 @@
 <template>
-    <h1>Page Home</h1>
-    <Card></Card>
-    <Deck ></Deck>
-
-
+    <div class="">
+        <h1>Page Home</h1>
+        <Cards ></Cards>
+    </div>
 </template>
 
 <script setup lang="ts">

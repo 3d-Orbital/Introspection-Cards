@@ -251,7 +251,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"rienda2-min",
+      "image1":"horse1-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":""
@@ -265,7 +265,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-green-300 dark:ring-green-600",
       "background": "",
-      "image1":"stairs1-min",
+      "image1":"puente1-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"hiden"
@@ -279,7 +279,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"sword1-min",
+      "image1":"horse2-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"hiden"
@@ -293,7 +293,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"parchment1-min",
+      "image1":"law6-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"hiden"
@@ -307,7 +307,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"beasty1-min",
+      "image1":"prision1-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"show"
@@ -321,7 +321,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"shell2-min",
+      "image1":"key1-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"hiden"
@@ -335,7 +335,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"mountain3-min",
+      "image1":"topLove1-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"hiden"
@@ -349,7 +349,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"ruby1-min",
+      "image1":"diamont2-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"hiden"
@@ -363,7 +363,7 @@
       "cardType":"situación",
       "borderColor":"ring-2 hover:ring-4 ring-blue-300 dark:ring-blue-600",
       "background": "",
-      "image1":"ruby1-min",
+      "image1":"throne1-min",
       "image2":"",
       "imageBack":"back3-min",
       "value":"hiden"
