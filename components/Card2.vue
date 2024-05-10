@@ -16,7 +16,7 @@
                 <p>{{ cardType }}</p>
             </template>
         </UCard>
-        <UCard :class="`card mx-2 my-8 w-80 min-w-80 ${borderColor}`"   v-else>
+        <UCard :class="`card mx-2 my-8 w-80 min-w-80 ${borderColor}`" v-else>
             <div :class="`flex inset-0 rounded-full min-w-32 min-h-32 max-w-full max-h-full`">      
                 <img slot="image" class="card-img-top pb-2" :src="`/images/${imageBack}.png`" alt="Back" />
             </div>                   
@@ -27,7 +27,7 @@
 <script setup lang="ts">
 import { _borderColor } from '#tailwind-config/theme';
 
-defineProps({
+const props = defineProps({
     id: Number, 
     title: String,
     content: String,
@@ -49,6 +49,7 @@ const toggle = () => {
 
 let cardState = "hiden"
 const cardShow = "show"
+let ean = props.id
 
 const color_border = _borderColor
 
