@@ -7,17 +7,16 @@
     <h2 class="text-2xl" >Primera Mano</h2>
     <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
         <Card @click="isOpen = true" v-for="card in cardsA" :key="card.id" :="card" >
-            <UModal v-model="isOpen">
-            <div class="p-4">
-                <Placeholder class="h-48" />
-            </div>
-            </UModal>
         </Card>
         <div>
             <UButton label="Open" @click="isOpen = true" />
-            
-        </div>
-        
+            <UModal v-model="isOpen">
+            <div class="p-4">
+                <Card > </Card>
+                <Placeholder class="h-48" />
+            </div>
+            </UModal>
+        </div>        
     </div>
     <h2 class="text-2xl" >Segunda Mano</h2>
     <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
@@ -34,14 +33,17 @@
 
 </template>
 <script setup lang="ts">
-
-const isOpen = ref(false)
 import { cardsA, cardsB, cardsC } from '~/data/cards.json'
 //import { cardsA, cardsB } from $t('fileDeck1') 
 
+const id = useId()
+
+console.log(id)
+
+
 const { locale, setLocale } = useI18n()
 
-import Card2 from './Card2.vue'
+const isOpen = ref(false)
 
 const route = useRoute()
 const { data } = await useAsyncData(async () => {
