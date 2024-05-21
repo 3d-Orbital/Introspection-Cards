@@ -1,4 +1,4 @@
-# Introspection Cards
+# Introspection Cards Games
 
 A personal journey and mental clarity
 
