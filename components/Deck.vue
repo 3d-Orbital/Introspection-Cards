@@ -1,20 +1,16 @@
   
 <template class="container mx-auto" >
-    <h2 class="text-2xl" >Primera Mano</h2>
-    <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
+    <h2 class="text-2xl m-2" >{{ $t('hand1') }}</h2>
+    <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll my-8">
         <Card v-for="card in cardsA" :key="card.id" :="card" ></Card>
     </div>
-    <h2 class="text-2xl" >Segunda Mano</h2>
-    <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
+    <h2 class="text-2xl m-2" >{{ $t('hand2') }}</h2>
+    <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll my-8">
         <Card v-for="card in cardsB" :key="card.id" :="card" ></Card>
     </div>
-    <h2 class="text-2xl" >Tercera Mano</h2>
-    <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
+    <h2 class="text-2xl m-2" >{{ $t('hand3') }}</h2>
+    <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll my-8">
         <Card v-for="card in cardsC" :key="card.id" :="card" ></Card>
-    </div>
-    <h2 class="text-2xl" >Test</h2>
-    <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
-        <Card2 v-for="card in cardsB" :key="card.id" :="card" ></Card2>
     </div>
 
 </template>

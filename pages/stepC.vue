@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <h1>Page Step Une</h1>
+        <h1 class="text-2xl my-8">{{ $t('step3') }}</h1>
         <StepC></StepC>
     </div>
 </template>

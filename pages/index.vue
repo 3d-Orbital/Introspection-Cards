@@ -1,9 +1,8 @@
 <template>
     <div  class="container mx-auto">
-        <h1>Page Home</h1>
-        <div class="flex flex-col ">
-            <h1 class="">{{ $t('titleGame1') }}</h1>
-            <p class="">{{ $t('descriptionGame1') }}</p>
+        <div class="flex flex-col justify-content-center items-center">
+            <h1 class="text-4xl my-4 mx-8">{{ $t('titleGame1') }}</h1>
+            <p class="my-4 mx-8 text-justify">{{ $t('descriptionGame1') }}</p>
         </div> 
         <GameOne></GameOne>
     </div>
