@@ -14,6 +14,12 @@ export const useCardsSelectedStore = defineStore('cardsSelectedStore', () => {
     
     lastCardSelected.value.push(value)
   }
+  async function deleteSelected() {
+    cardsSelected.value.shift()
+    cardsSelected.value.shift()
+    cardsSelected.value.shift()
+    console.log(cardsSelected.value)
+  }
   async function setGameStage1(value: string) {
     if (gameStage.value[0] == value) {
       actualStage.value = gameStage.value[0]
@@ -32,5 +38,5 @@ export const useCardsSelectedStore = defineStore('cardsSelectedStore', () => {
     }
             
   }
-  return { addCardsToList,addLastCardsSelected,setGameStage1,lastCardSelected, cardsSelected, gameStage, actualStage }
+  return { addCardsToList,addLastCardsSelected,setGameStage1, deleteSelected,lastCardSelected, cardsSelected, gameStage, actualStage }
 })

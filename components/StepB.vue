@@ -1,10 +1,10 @@
   
 <template class="container mx-auto" >
     <div class="flex flex-col ">
-        <h1 class="">{{ $t('titleGame1') }}</h1>
+        <h2 class="">{{ $t('chooseCard') }}</h2>
+
     </div>
-    <UButton @click="storeGame.setGameStage1('StageB')">Star Game</UButton>
-    {{ storeGame.actualStage }}
+    <UButton @click="storeGame.setGameStage1('StageB')">{{ $t('showCards') }}</UButton>
     <div v-if="storeGame.actualStage === 'StageB'">
         <h2 class="text-2xl" >Segunda Mano</h2>
         <div class="flex flex-nowrap overflow-x-auto overflow-y-auto overflow-x-scroll">

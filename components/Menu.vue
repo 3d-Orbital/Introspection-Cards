@@ -50,44 +50,7 @@
                     3 ways to choos the color theme: UDropdown, UButton, Utoggle 
                 --> 
 
-              <UDropdown :items="color_mode" :popper="{ placement: 'bottom-start' }">
-                <UButton color="white" label="" trailing-icon="i-heroicons-chevron-down-20-solid">{{ $colorMode.value }}
-                </UButton>
-              </UDropdown>
-              <UDropdown :items="language" :popper="{ placement: 'bottom-start' }">
-                <UButton color="white" label="" trailing-icon="i-heroicons-chevron-down-20-solid">{{ locale }}</UButton>
-              </UDropdown>
-
-              <div v-if="$colorMode.value == 'light'">
-                <UButton
-                  icon="i-heroicons-moon-16-solid"
-                  size="sm"
-                  color="primary"
-                  variant="solid"
-                  label="Dark"
-                  v-on:click="setColorTheme()"
-                  :trailing="false"
-                />
-              </div>
-              <div v-else-if="$colorMode.value == 'dark'">
-                <UButton
-                  icon="i-heroicons-sun-20-solid"
-                  size="sm"
-                  color="primary"
-                  variant="Dark"
-                  label="Light"
-                  v-on:click="setColorTheme()" 
-                  :trailing="false"
-                />
-              </div>
-              <b>{{ selected2 }}</b>
-              <UToggle size="lg" 
-                on-icon="i-heroicons-sun-20-solid"
-                off-icon="i-heroicons-moon-16-solid"
-                v-model="selected1" v-on:click="setColorTheme()" />
-              <b class="dark:text-white">{{ selected1 }}</b>
-              <a> {{ $t('welcome') }} </a>
-              {{ '  | | '+ $colorMode.value }}
+              
             </div>
           </div>
         </div>
@@ -102,6 +65,7 @@
                 d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
             </svg>
           </button>
+
           <!-- Profile dropdown -->
           <div class="relative ml-3">
             <UToggle size="lg" 
@@ -109,6 +73,10 @@
                 on-icon="i-heroicons-sun-20-solid"
                 off-icon="i-heroicons-moon-16-solid"
                 v-model="selected1" v-on:click="setColorTheme()" />
+            
+            <UDropdown class="px-2 mb-4 -top-2" :items="language" :popper="{ placement: 'bottom-start' }">
+              <UButton color="white" label="" trailing-icon="i-heroicons-chevron-down-20-solid">{{ locale }}</UButton>
+            </UDropdown>
             <UDropdown :items="settings" :popper="{ placement: 'bottom-start' }">
               <UAvatar src="https://avatars.githubusercontent.com/u/5130818?v=4" />
             </UDropdown>
@@ -124,7 +92,7 @@
       <div class="space-y-1 px-2 pb-3 pt-2">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-          aria-current="page">home</a>
+          aria-current="page">{{ $t('navHome') }}</a>
         <a href="/decks"
           class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Decks</a>
         <a href="#"
@@ -210,6 +178,27 @@ const setColorTheme = () => {
     console.log("system")
   }
 }
+
+const menu_mobile = [
+  [{
+    label: 'Your Profile',
+    value: 'Profile',
+    click: () => {
+      //set English language.
+    }
+  }], [{
+    label: 'Settings',
+    value: 'settings',
+    click: () => {
+      //set English language.
+    }
+  }], [{
+    label: 'Sign Out',
+    value: 'sing-out',
+    click: () => {
+      // set Spanish language.
+    }
+  }]]
 
 const settings = [
   [{

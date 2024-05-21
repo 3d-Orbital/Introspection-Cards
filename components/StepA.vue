@@ -1,16 +1,15 @@
   
 <template class="container mx-auto" >
     <div class="flex flex-col ">
-        <h1 class="">{{ $t('titleGame1') }}</h1>
-        <p class="">{{ $t('descriptionGame1') }}</p>
+        <h2 class="">{{ $t('chooseCard') }}</h2>
+
     </div>
-    <UButton @click="storeGame.setGameStage1('StageA')">Star Game</UButton>
+    <UButton @click="storeGame.setGameStage1('StageA')">{{ $t('showCards') }}</UButton>
     <div v-if="storeGame.actualStage === 'StageA'">
         <h2 class="text-2xl" >Primera Mano</h2>
         <div class="flex flex-nowrap overflow-x-auto overflow-y-auto overflow-x-scroll">
             <Card @click="isOpen = true; storeCards.addCardsToList(card)" v-for="card in cardsA" :key="card.id" :="card" >
-            </Card>
-                    
+            </Card>      
         </div>
     </div>    
     <div>
@@ -18,8 +17,6 @@
         <div class="p-4">
             <Card v-on:click="storeGame.setGameStage1('StageB')" v-for="card in storeCards.cardsSelected " :key="card.id" :="card"> </Card>
             <UButton to="/stepB">Next</UButton>
-            {{ storeCards.cardsSelected }}
-            
         </div>
         </UModal>
     </div>
@@ -50,8 +47,6 @@ const setStage = (value:string) => {
 const { locale, setLocale } = useI18n()
 
 const isOpen = ref(false)
-const isOpenB = ref(false)
-const isOpenC = ref(false)
 
 const route = useRoute()
 const { data } = await useAsyncData(async () => {

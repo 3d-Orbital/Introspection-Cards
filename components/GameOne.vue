@@ -1,41 +1,30 @@
   
-<template class="container mx-auto" >
-    <div class="flex flex-col ">
-        <h1 class="">{{ $t('titleGame1') }}</h1>
-    </div>
+<template >
     
     <div v-if="storeGame.actualStage === 'StageEnd'">
-        <h2 class="text-2xl" >Primera Mano</h2>
+        <h2 class="text-2xl" >Los tres Pasos</h2>
         <div class="flex flex-nowrap overflow-x-auto overflow-y-auto overflow-x-scroll">
-            <Card @click="isOpen = true; storeCards.addCardsToList(card)" v-for="card in storeCards.cardsSelected " :key="card.id" :="card" >
+            <Card @click="isOpen = true; " v-for="card in storeCards.cardsSelected " :key="card.id" :="card" >
             </Card>
-            <UButton to="/stepA" @click="storeGame.setGameStage1('StageA')">Star Game</UButton>                    
         </div>
+        <UButton to="/stepA" @click="storeGame.setGameStage1('StageA');storeGame.deleteSelected()">Star Game</UButton>                    
     </div>
 
     <div v-else>
-
-        <h2 class="text-2xl" >Test</h2>
+        <h2 class="text-2xl" >New Test</h2>
         <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
-            <Card2 @click="storeCards.addCardsToList(card)" v-for="card in cardsB" :key="card.id" :="card" ></Card2>
+            
+            <UButton to="/stepA" @click="storeGame.setGameStage1('StageA'); storeGame.deleteSelected()">Star Game</UButton> 
         </div>
     </div>
     <div>
         <UModal v-model="isOpen">
         <div class="p-4">
-            <Card v-on:click="storeGame.setGameStage1('StageB')" v-for="card in storeCards.cardsSelected " :key="card.id" :="card"> </Card>
-            <UButton to="/decks" @click="storeGame.setGameStage1('StageB')">Next</UButton>            
+            <Card v-on:click="storeGame.setGameStage1('StageEnd')" v-for="card in storeCards.cardsSelected " :key="card.id" :="card"> </Card>
+            <UButton @click="storeGame.setGameStage1('StageEnd')">Next</UButton>            
         </div>
         </UModal>
     </div>
-    <div>
-        <p>{{ store.getCardslist }}</p>        
-    </div>
-
-    <div @click="store.addCard" >
-        <p>{{ lista }}</p>        
-    </div>
-
 </template>
 <script setup lang="ts">
 import { mapState, mapStores } from 'pinia';
@@ -58,6 +47,18 @@ const setStage = (value:string) => {
     storeGame.setGameStage1(value)
     
 }
+
+
+async function nametakeScreenshot() {
+      const canvas = this.$refs.canvas.getContext('2d')
+      const ctx = canvas.getContext('2d')
+      ctx.drawImage(document.documentElement, 0, 0, canvas.width, canvas.height)
+      const dataURL = canvas.toDataURL('image/png')
+      const link = document.createElement('a')
+      link.href = dataURL
+      link.download = 'screenshot.png'
+      link.click()
+    }
 
 const { locale, setLocale } = useI18n()
 

@@ -1,9 +1,10 @@
   
 <template class="container mx-auto" >
     <div class="flex flex-col ">
-        <h1 class="">{{ $t('titleGame1') }}</h1>
+        <h2 class="">{{ $t('chooseCard') }}</h2>
+
     </div>
-    <UButton @click="storeGame.setGameStage1('StageC')">Star Game</UButton>
+    <UButton @click="storeGame.setGameStage1('StageC')">{{ $t('showCards') }}</UButton>
     <div v-if="storeGame.actualStage === 'StageC'">
         <h2 class="text-2xl" >Primera Mano</h2>
         <div class="flex flex-nowrap overflow-x-auto overflow-y-auto overflow-x-scroll">
@@ -17,8 +18,6 @@
         <div class="p-4">
             <Card v-on:click="storeGame.setGameStage1('StageEnd')" v-for="card in storeCards.cardsSelected " :key="card.id" :="card"> </Card>
             <UButton to="/">Next</UButton>
-            {{ storeCards.cardsSelected }}
-            
         </div>
         </UModal>
     </div>

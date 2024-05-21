@@ -3,7 +3,7 @@
     <div class="flex flex-col ">
         <h1 class="">{{ $t('titleGame1') }}</h1>
     </div>
-    <UButton to="/stepA" @click="storeGame.setGameStage1('StageA')">Star Game</UButton>
+    <UButton to="/stepA" @click="storeGame.setGameStage1('StageA')">{{ $t('showCards') }}</UButton>
     <div v-if="storeGame.actualStage === 'StageA'">
         <h2 class="text-2xl" >Primera Mano</h2>
         <div class="flex flex-nowrap overflow-x-auto overflow-y-auto overflow-x-scroll">
@@ -15,11 +15,11 @@
     <div v-else-if="storeGame.actualStage === 'StageB'">
         <h2 class="text-2xl" >Segunda Mano</h2>
         <div class="flex flex-nowrap overflow-x-auto overflow-x-scroll">
-            <Card @click="isOpenB = true;storeCards.addCardsToList(card)" v-for="card in cardsB" :key="card.id" :="card" ></Card>
+            <Card @click="isOpenB = true;storeCards.addCardsToList(card)" v-for="card in cardsB" :key="card.id" :="card"></Card>
             <div>
                 <UModal v-model="isOpen">
                 <div class="p-4">
-                    <Card @click="storeGame.setGameStage1('StageC')" v-for="card in storeCards.cardsSelected " :key="card.id" :="card"> </Card>
+                    <Card @click="storeGame.setGameStage1('StageC')" v-for="card in storeCards.cardsSelected " :key="card.id" :="card"></Card>
                     
                     {{ storeCards.lastCardSelected }}
                 </div>
