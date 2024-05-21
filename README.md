@@ -3,7 +3,7 @@
 A personal journey and mental clarity
 
 
- DEMO: [(https://cartas-agf.netlify.app)]([https://nuxt.com/docs/getting-started/introduction](https://cartas-agf.netlify.app)) 
+ DEMO: [https://cartas-agf.netlify.app](https://cartas-agf.netlify.app) 
 
 ## Nuxt 3 Minimal Starter
 
